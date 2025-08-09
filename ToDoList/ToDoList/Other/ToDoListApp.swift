@@ -5,4 +5,18 @@
 //  Created by İreemmmm on 9.08.2025.
 //
 
-import Foundation
+import FirebaseCore
+import SwiftUI
+
+@main
+struct ToDoListApp: App {
+    init(){
+        FirebaseApp.configure()
+    }
+    
+    var body: some Scene {
+        WindowGroup {
+            MainView()
+        }
+    }
+}
