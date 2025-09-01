@@ -9,8 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State var email = ""
-    @State var password = ""
+   @StateObject var viewModel = LoginViewViewModel()
     
     var body: some View {
         NavigationView{
@@ -23,38 +22,37 @@ struct LoginView: View {
                 
                 //Login Form
                 Form{
-                    TextField("Email Address", text: $email).textFieldStyle(DefaultTextFieldStyle())
+                    TextField("Email Address", text: $viewModel.email).textFieldStyle(DefaultTextFieldStyle()).autocapitalization(.none)
                     
-                    SecureField("Password", text: $password).textFieldStyle(DefaultTextFieldStyle())
+                    SecureField("Password", text: $viewModel.password).textFieldStyle(DefaultTextFieldStyle())
                     
-                    Button{
-                        // attempt log in
+                    TLButton(title: "LOG IN",
+                             background: .blue,)
+                    {
+                        // Attempt to log in
                         
-                    } label:{
-                        ZStack{
-                            RoundedRectangle(cornerRadius: 10).foregroundStyle(Color.orange)
-                            
-                            Text("Log In").foregroundColor(Color.white).bold()
-                        }
                     }
+                    .padding()
                 }
-                .offset(y:-50)
-                
-                //Create Account
-                VStack{
-                    Text("First time here?")
+                    .offset(y:-50)
                     
-                    NavigationLink("Create An Account", destination: RegisterView())
-                  
+                    //Create Account
+                    VStack{
+                        Text("First time here?")
+                        
+                        NavigationLink("Create An Account", destination: RegisterView())
+                        
+                    }
+                    .padding(.bottom,50)
+                    Spacer()
                 }
-                .padding(.bottom,50)
-                Spacer()
             }
         }
     }
-}
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
+    struct LoginView_Previews: PreviewProvider {
+        static var previews: some View {
+            LoginView()
+        }
     }
-}
+
+    
