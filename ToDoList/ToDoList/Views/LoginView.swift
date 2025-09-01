@@ -17,7 +17,9 @@ struct LoginView: View {
             
             VStack{
                 //header
-                HeaderView()
+                HeaderView(title: "Done Flow",subtitle: "Flow Through Your Goals",
+                           angle: -20,
+                           background: .pink)
                 
                 //Login Form
                 Form{
@@ -36,6 +38,7 @@ struct LoginView: View {
                         }
                     }
                 }
+                .offset(y:-50)
                 
                 //Create Account
                 VStack{

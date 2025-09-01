@@ -11,7 +11,12 @@ struct RegisterView: View {
     var body: some View {
         VStack{
             //header
-            HeaderView()
+            HeaderView(title: "Register",
+                       subtitle: "Start Your Flow",
+                       angle:20,
+                       background: .purple)
+            Spacer()
+        }
     }
 }
 struct RegisterView_Previews: PreviewProvider {
@@ -20,4 +25,3 @@ struct RegisterView_Previews: PreviewProvider {
         }
     }
 
-    }
