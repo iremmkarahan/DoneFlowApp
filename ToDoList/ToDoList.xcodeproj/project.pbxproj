@@ -19,6 +19,9 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EB57327D2E4787A200B9F45A /* ToDoList */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			explicitFileTypes = {
+				Other/Assets.xcassets = wrapper.application;
+			};
 			path = ToDoList;
 			sourceTree = "<group>";
 		};
