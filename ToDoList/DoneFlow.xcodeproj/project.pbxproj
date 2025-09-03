@@ -13,15 +13,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EB57327B2E4787A200B9F45A /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB57327B2E4787A200B9F45A /* DoneFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoneFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EB57327D2E4787A200B9F45A /* ToDoList */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			explicitFileTypes = {
-				Other/Assets.xcassets = wrapper.application;
-			};
 			path = ToDoList;
 			sourceTree = "<group>";
 		};
@@ -52,7 +49,7 @@
 		EB57327C2E4787A200B9F45A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB57327B2E4787A200B9F45A /* ToDoList.app */,
+				EB57327B2E4787A200B9F45A /* DoneFlow.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,9 +57,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EB57327A2E4787A200B9F45A /* ToDoList */ = {
+		EB57327A2E4787A200B9F45A /* DoneFlow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB5732862E4787A800B9F45A /* Build configuration list for PBXNativeTarget "ToDoList" */;
+			buildConfigurationList = EB5732862E4787A800B9F45A /* Build configuration list for PBXNativeTarget "DoneFlow" */;
 			buildPhases = (
 				EB5732772E4787A200B9F45A /* Sources */,
 				EB5732782E4787A200B9F45A /* Frameworks */,
@@ -75,14 +72,14 @@
 			fileSystemSynchronizedGroups = (
 				EB57327D2E4787A200B9F45A /* ToDoList */,
 			);
-			name = ToDoList;
+			name = DoneFlow;
 			packageProductDependencies = (
 				EB57328A2E478B8600B9F45A /* FirebaseAuth */,
 				EB57328C2E478B8600B9F45A /* FirebaseFirestore */,
 				EB5732942E47931400B9F45A /* FirebaseCore */,
 			);
 			productName = ToDoList;
-			productReference = EB57327B2E4787A200B9F45A /* ToDoList.app */;
+			productReference = EB57327B2E4787A200B9F45A /* DoneFlow.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +97,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EB5732762E4787A200B9F45A /* Build configuration list for PBXProject "ToDoList" */;
+			buildConfigurationList = EB5732762E4787A200B9F45A /* Build configuration list for PBXProject "DoneFlow" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -117,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EB57327A2E4787A200B9F45A /* ToDoList */,
+				EB57327A2E4787A200B9F45A /* DoneFlow */,
 			);
 		};
 /* End PBXProject section */
@@ -271,10 +268,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MD4ZN8RA7M;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "To Do List";
+				INFOPLIST_KEY_CFBundleDisplayName = "Done Flow";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,10 +296,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MD4ZN8RA7M;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "To Do List";
+				INFOPLIST_KEY_CFBundleDisplayName = "Done Flow";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -323,7 +320,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EB5732762E4787A200B9F45A /* Build configuration list for PBXProject "ToDoList" */ = {
+		EB5732762E4787A200B9F45A /* Build configuration list for PBXProject "DoneFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB5732842E4787A800B9F45A /* Debug */,
@@ -332,7 +329,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB5732862E4787A800B9F45A /* Build configuration list for PBXNativeTarget "ToDoList" */ = {
+		EB5732862E4787A800B9F45A /* Build configuration list for PBXNativeTarget "DoneFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB5732872E4787A800B9F45A /* Debug */,
