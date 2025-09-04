@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB180BB62E69AE6900352EFA /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = EB180BB52E69AE6900352EFA /* FirebaseFirestoreCombine-Community */; };
+		EB180BB82E69AF6000352EFA /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = EB180BB72E69AF6000352EFA /* FirebaseDatabase */; };
 		EB57328B2E478B8600B9F45A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EB57328A2E478B8600B9F45A /* FirebaseAuth */; };
 		EB57328D2E478B8600B9F45A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EB57328C2E478B8600B9F45A /* FirebaseFirestore */; };
 		EB5732952E47931400B9F45A /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = EB5732942E47931400B9F45A /* FirebaseCore */; };
@@ -29,7 +31,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB180BB82E69AF6000352EFA /* FirebaseDatabase in Frameworks */,
 				EB57328B2E478B8600B9F45A /* FirebaseAuth in Frameworks */,
+				EB180BB62E69AE6900352EFA /* FirebaseFirestoreCombine-Community in Frameworks */,
 				EB5732952E47931400B9F45A /* FirebaseCore in Frameworks */,
 				EB57328D2E478B8600B9F45A /* FirebaseFirestore in Frameworks */,
 			);
@@ -38,10 +42,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB180BB42E69AE6900352EFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EB5732722E4787A200B9F45A = {
 			isa = PBXGroup;
 			children = (
 				EB57327D2E4787A200B9F45A /* ToDoList */,
+				EB180BB42E69AE6900352EFA /* Frameworks */,
 				EB57327C2E4787A200B9F45A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +89,8 @@
 				EB57328A2E478B8600B9F45A /* FirebaseAuth */,
 				EB57328C2E478B8600B9F45A /* FirebaseFirestore */,
 				EB5732942E47931400B9F45A /* FirebaseCore */,
+				EB180BB52E69AE6900352EFA /* FirebaseFirestoreCombine-Community */,
+				EB180BB72E69AF6000352EFA /* FirebaseDatabase */,
 			);
 			productName = ToDoList;
 			productReference = EB57327B2E4787A200B9F45A /* DoneFlow.app */;
@@ -352,6 +366,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EB180BB52E69AE6900352EFA /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB5732892E478B8600B9F45A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		EB180BB72E69AF6000352EFA /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB5732892E478B8600B9F45A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
 		EB57328A2E478B8600B9F45A /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EB5732892E478B8600B9F45A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
