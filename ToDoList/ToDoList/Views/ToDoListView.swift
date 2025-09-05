@@ -9,13 +9,16 @@ import FirebaseFirestore
 
 struct ToDoListView: View {
     
-    @StateObject var viewModel = ToDoListViewViewModel()
+    @StateObject var viewModel: ToDoListViewViewModel
     @FirestoreQuery var items: [ToDoListItem]
     
     init(userId: String){
       
         // users/<id>/todolistitems/<entries> --> this is the path that database follows. main reason why we need user id
-        self._items = FirestoreQuery(collectionPath: "users/\(userId)/todolistitems")
+        self._items = FirestoreQuery(collectionPath: "users/\(userId)/todolistitems"
+        )
+        self._viewModel = StateObject(wrappedValue: ToDoListViewViewModel(userId: userId)
+        )
     }
     var body: some View {
         NavigationView {

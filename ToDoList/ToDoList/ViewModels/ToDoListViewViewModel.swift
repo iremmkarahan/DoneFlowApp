@@ -14,15 +14,17 @@ class ToDoListViewViewModel: ObservableObject {
     
     @Published var showingNewItemView = false
     
-    init(){
-        
+    private let userId: String
+    
+    init(userId: String){
+        self.userId = userId
         
     }
     func delete(id: String) {
         let database = Firestore.firestore()
         
         database.collection("users")
-            .document("user_id")
+            .document(userId)
             .collection("todolistitems")
             .document(id)
             .delete()
