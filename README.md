@@ -32,37 +32,38 @@ DoneFlow allows users to authenticate securely, create tasks with precise deadli
 
 ## 📸 Screenshots
 
-<div style="display: flex; gap: 20px; flex-wrap: wrap;">
 
- <div>
-  <h4>Authentication</h4>
-  <div style="display: flex; gap: 20px;">
-    <img src="signin.png" alt="Sign In Screen" width="300"/>
-    <img src="signup.png" alt="Sign Up Screen" width="300"/>
-  </div>
- </div>
+<div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
 
   <div>
-    <h4>Task List</h4>
-    <img src="tasklist.png" alt="Task List" width="300"/>
+    <h4 style="text-align: center;">Authentication</h4>
+    <div style="display: flex; gap: 15px;">
+      <img src="signin.png" alt="Sign In Screen" width="180"/>
+      <img src="signup.png" alt="Sign Up Screen" width="180"/>
+    </div>
   </div>
 
   <div>
-    <h4>New List Item</h4>
-    <img src="newlistitem.png" alt="New list item" width="300"/>
+    <h4 style="text-align: center;">Task List</h4>
+    <img src="tasklist.png" alt="Task List" width="200"/>
   </div>
 
   <div>
-    <h4>Profile View</h4>
-    <img src="profileview.png" alt="Profile View" width="300"/>
+    <h4 style="text-align: center;">New List Item</h4>
+    <img src="newlistitem.png" alt="New List Item" width="200"/>
   </div>
 
   <div>
-    <h4>Launch Screen</h4>
-    <img src="launchscreen.png" alt="Launch Screen" width="300"/>
+    <h4 style="text-align: center;">Profile View</h4>
+    <img src="profileview.png" alt="Profile View" width="200"/>
+  </div>
+
+  <div>
+    <h4 style="text-align: center;">Launch Screen</h4>
+    <img src="launchscreen.png" alt="Launch Screen" width="200"/>
   </div>
 
 </div>
----
+
 
 
